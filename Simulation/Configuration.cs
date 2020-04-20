@@ -5,7 +5,7 @@ namespace Game
 {
     public static class Configuration
     { 
-        public static float Scale = 1f;
+        public const float Scale = 0.8f;
 
         public static uint Height = (uint)(2160 * Scale);
 

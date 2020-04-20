@@ -26,7 +26,7 @@ namespace Game.GeneticAlgorithm
                 var x = toTown.X - fromTown.X;
                 var y = toTown.Y - fromTown.Y;
 
-                var d = Math.Sqrt(x * x + y + y);
+                var d = Math.Sqrt(x * x + y * y);
 
                 totalDistance += d;
             }

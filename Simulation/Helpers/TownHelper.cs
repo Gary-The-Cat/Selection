@@ -9,7 +9,7 @@ namespace Game.Helpers
     public static class TownHelper
     {
         private const int Linethickness = 4;
-        private const int PathOffsetFromTown = 180;
+        private const int PathOffsetFromTown = (int)(180 * Configuration.Scale);
 
         public static List<ConvexShape> GetTownSequencePath(List<int> townSequence)
         {
@@ -45,16 +45,16 @@ namespace Game.Helpers
 
         public static List<Vector2f> TownPositions = new List<Vector2f>()
         {
-            new Vector2f(3060, 1300), 
-            new Vector2f(1050, 450),
-            new Vector2f(450, 750),
-            new Vector2f(690, 1890),
-            new Vector2f(1410, 1830),
-            new Vector2f(2070, 1560),
-            new Vector2f(1725, 1080),
-            new Vector2f(3360, 810),
-            new Vector2f(3450, 1770),
-            new Vector2f(2460, 240),
+            new Vector2f(3060, 1300) * Configuration.Scale, 
+            new Vector2f(1050, 450) * Configuration.Scale,
+            new Vector2f(450, 750) * Configuration.Scale,
+            new Vector2f(690, 1890)* Configuration.Scale,
+            new Vector2f(1410, 1830) * Configuration.Scale,
+            new Vector2f(2070, 1560)* Configuration.Scale,
+            new Vector2f(1725, 1080) * Configuration.Scale,
+            new Vector2f(3360, 810) * Configuration.Scale,
+            new Vector2f(3450, 1770) * Configuration.Scale,
+            new Vector2f(2460, 240) * Configuration.Scale,
         };
     }
 }
